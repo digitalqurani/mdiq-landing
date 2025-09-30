@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MDIQ — Profil & Layanan</title>
+  <meta name="description" content="MDIQ — Profil lembaga, layanan pendidikan & informasi" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">MDIQ</a>
+      <nav class="nav">
+        <a href="#about">Tentang</a>
+        <a href="#services">Layanan</a>
+        <a href="#blog">Artikel</a>
+        <a href="#contact">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Selamat datang di MDIQ</h1>
+        <p>Profil lembaga, program pendidikan, dan sumber belajar untuk komunitas.</p>
+        <p><a class="btn" href="#contact">Hubungi Kami</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Tentang Kami</h2>
+        <p>MDIQ bergerak di bidang pendidikan dengan fokus pada pengembangan kompetensi santri: bahasa, IT, dan keilmuan tradisional.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container grid">
+        <div>
+          <h3>Program</h3>
+          <p>Program intensif bahasa & IT, kurikulum terstruktur untuk SMP–SMA.</p>
+        </div>
+        <div>
+          <h3>Blog & Artikel</h3>
+          <p>Artikel pendidikan, tutorial IT, dan berita kegiatan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>Artikel Terbaru</h2>
+        <p>Segera hadir — gunakan blog untuk publikasi konten.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:info@mdiq.biz.id">info@mdiq.biz.id</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> MDIQ. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+:root{
+  --bg:#f8fafc; --accent:#0b74de; --text:#0b1a2b;
+  --container:1100px;
+  --radius:10px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:var(--text);background:var(--bg);line-height:1.6}
+.container{max-width:var(--container);margin:0 auto;padding:24px}
+.site-header{background:#fff;box-shadow:0 1px 6px rgba(10,10,10,0.05)}
+.site-header .container{display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.1rem}
+.nav a{margin-left:18px;color:var(--text);text-decoration:none}
+.hero{padding:64px 0;background:linear-gradient(180deg,#fff,#f1f6fb)}
+.hero h1{margin:0 0 8px;font-size:2rem}
+.btn{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+.section{padding:48px 0}
+.section.alt{background:#fff;border-top:1px solid rgba(10,10,10,0.03)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.site-footer{padding:20px 0;text-align:center;color:#6b7280;background:transparent}
+
+/* responsive */
+@media(max-width:720px){
+  .nav{display:none}
+  .hero h1{font-size:1.6rem}
+  .grid{grid-template-columns:1fr}
+}
